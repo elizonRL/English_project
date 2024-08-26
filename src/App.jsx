@@ -7,10 +7,8 @@ const App = () => {
   useEffect(() => {
     getDataService.getAllData().then((data) => {
       setTopics(data)
-      console.log("data fromt api =>", data);
     });
   }, []);
-  console.log("topic useState =>", topic)
   
   return (
     <>
