@@ -14,13 +14,19 @@ h1 {
   font-size: 44px;
   font-weight: 600;
 }
-h2{
+h2 {
   font-size: 36px;
   font-weight: 500;
 }
-p{
+p {
   font-size: 25px;
   font-weight: 400;
+}
+aside {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
 }
 /* class's */
 .cards {
@@ -34,6 +40,19 @@ p{
   grid-template-rows: max-content 100px 1fr;
   border: solid gray 1px;
   border-radius: 5px;
+}
+.title-video {
+  font-size: 44px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+}
+.videos-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 @media (max-width: 775px) {
