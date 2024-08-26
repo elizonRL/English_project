@@ -54,7 +54,19 @@ aside {
   justify-content: center;
   padding-top: 10px;
 }
-
+.link-practice {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;
+}
+.practices {
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+}
 @media (max-width: 775px) {
   .cards {
     grid-template-columns: auto;

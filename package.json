@@ -12,7 +12,10 @@
     "dev:serve": "npm run dev npm run server"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@justinribeiro/lite-youtube": "^1.5.0",
+    "@mui/material": "^5.16.7",
     "axios": "^1.7.5",
     "english": "file:",
     "json-server": "^1.0.0-beta.2",

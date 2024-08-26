@@ -5,6 +5,8 @@ import "@justinribeiro/lite-youtube";
 import Video from "./components/Viddeo";
 import YouTube from "./components/icons/Yotube";
 import Book from "./components/icons/Book";
+import Button from "@mui/material/Button";
+import { Container } from "@mui/material";
 
 const App = () => {
   /* const [topic, setTopics] = useState([]); */
@@ -133,14 +135,15 @@ const App = () => {
       ],
     },
   ];
- /*  useEffect(() => {
+  /*  useEffect(() => {
     getDataService.getAllData().then((data) => {
       setTopics(data);
     });
   }, []); */
-  
+
   return (
     <>
+      <Container fixed>
       <main>
         <h1>
           English App <Book width="44" heigth="44" />
@@ -156,7 +159,18 @@ const App = () => {
           </h2>
           <Video videos={videos} />
         </section>
+        <section className="practices">
+          <h2>practice about units 5 and 6</h2>
+          <Button
+            variant="contained"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSftWBM24h_a1gh284-3xcHmCYum5OHyvpJD90Hit3xL29EccA/viewform?usp=sf_link"
+            target="blank"
+          >
+            link go to practice <Book width="22" height="22" />
+          </Button>
+        </section>
       </main>
+      </Container>
     </>
   );
 };
