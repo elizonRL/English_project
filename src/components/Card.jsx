@@ -1,3 +1,5 @@
+import Weblink from "./icons/Weblink";
+
 const Card = ({ topics }) => {
   console.log(topics);
   return (
@@ -14,7 +16,7 @@ const Card = ({ topics }) => {
                   {recurso.links.map((link) => (
                     <li key={link.id}>
                       <a href={link.url} target="blank">
-                        {link.title}
+                        {link.title} <Weblink/>
                       </a>
                     </li>
                   ))}
