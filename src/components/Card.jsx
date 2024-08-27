@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import Weblink from "./icons/Weblink";
 
 const Card = ({ topics }) => {
@@ -15,9 +16,9 @@ const Card = ({ topics }) => {
                 <ul>
                   {recurso.links.map((link) => (
                     <li key={link.id}>
-                      <a href={link.url} target="blank">
+                      <Link href={link.url} underline="hover" target="blank">
                         {link.title} <Weblink/>
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
