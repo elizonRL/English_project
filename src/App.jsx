@@ -1,6 +1,6 @@
 /* import { useEffect, useState } from "react";
 import getDataService from "./services/getData.service"; */
-import Card from "./components/Card";
+import Cards from "./components/Card";
 import "@justinribeiro/lite-youtube";
 import Video from "./components/Viddeo";
 import YouTube from "./components/icons/Yotube";
@@ -152,7 +152,7 @@ const App = () => {
         <p>
           These are the different topics covered in units 5 and 6 for the exam.
         </p>
-        <Card topics={topics} />
+        <Cards topics={topics} />
         <section>
           <h2 className="title-video">
             List of videos <YouTube />{" "}

@@ -2,7 +2,8 @@ const Video = ({videos}) => {
     console.log("videos",videos)
     return(
         <>
-        <aside>
+        
+        {/* <aside>
             {videos.map((video) => (
               <div className="videos-list" key={video.id}>
                 <h3>{video.videoTitle}</h3>
@@ -13,7 +14,7 @@ const Video = ({videos}) => {
               </div>
             ))}
             
-          </aside>
+          </aside> */}
         </>
     )
 };
