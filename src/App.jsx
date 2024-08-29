@@ -153,9 +153,9 @@ const App = () => {
           These are the different topics covered in units 5 and 6 for the exam.
         </p>
         <Cards topics={topics} />
-        <section>
+        <section className="videos">
           <h2 className="title-video">
-            List of videos <YouTube />{" "}
+            List of videos <YouTube />
           </h2>
           <Video videos={videos} />
         </section>
