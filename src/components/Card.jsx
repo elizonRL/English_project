@@ -1,5 +1,5 @@
 import Weblink from "./icons/Weblink";
-import { Card, CardContent } from "@mui/material";
+import { Card, CardContent, Paper } from "@mui/material";
 import Divider from '@mui/material/Divider';
 
 const Cards = ({ topics }) => {
@@ -8,7 +8,8 @@ const Cards = ({ topics }) => {
     <>
       <div className="cards">
         {topics.map((topic) => (
-          <Card sx={{ minWidth: 275 }} variant="outlined" key={topic.id}>
+          <Paper elevation={3} key={topic.id}>	
+          <Card  variant="outlined" >
             <CardContent>
               <h3>{topic.title}</h3>
               <Divider  flexItem />
@@ -30,6 +31,7 @@ const Cards = ({ topics }) => {
               ))}
             </CardContent>
           </Card>
+          </Paper>
         ))}
       </div>
     </>

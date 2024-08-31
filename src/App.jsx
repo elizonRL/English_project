@@ -144,7 +144,6 @@ const App = () => {
   return (
     <>
       <Container fixed>
-      <main>
         <h1>
           English App <Book width="44" heigth="44" />
         </h1>
@@ -169,7 +168,6 @@ const App = () => {
             link go to practice <Book width="22" height="22" />
           </Button>
         </section>
-      </main>
       </Container>
     </>
   );
