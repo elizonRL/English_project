@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light dark;
+}
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  width: 800px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+p {
+  font-size: 25px;
+  font-weight: 400;
+}
+aside {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+/* class's */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+.card {
+  padding-inline: 10px;
+  display: grid;
+  grid-template-rows: max-content 100px 1fr;
+  border: solid gray 1px;
+  border-radius: 5px;
+}
+.title-video {
+  font-size: 44px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+}
+.videos-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.link-practice {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;
+}
+.practices {
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+}
+@media (max-width: 775px) {
+  .cards {
+    grid-template-columns: auto;
+  }
+}
