@@ -1,12 +1,10 @@
-/* import { useEffect, useState } from "react";
-import getDataService from "./services/getData.service"; */
+
 import Card from "./components/Card";
 import "@justinribeiro/lite-youtube";
 import Video from "./components/Viddeo";
 import YouTube from "./components/icons/Yotube";
 import Book from "./components/icons/Book";
-import Button from "@mui/material/Button";
-import { Container } from "@mui/material";
+
 
 const App = () => {
   /* const [topic, setTopics] = useState([]); */
@@ -139,7 +137,7 @@ const App = () => {
 
   return (
     <>
-      <Container fixed>
+      
       <main>
         <h1>
           English App <Book width="44" heigth="44" />
@@ -166,7 +164,7 @@ const App = () => {
           </Button>
         </section>
       </main>
-      </Container>
+      
     </>
   );
 };
