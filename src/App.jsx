@@ -7,6 +7,7 @@ import YouTube from "./components/icons/Yotube";
 import Book from "./components/icons/Book";
 import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
+import Header from "./components/Header";
 
 const App = () => {
   /* const [topic, setTopics] = useState([]); */
@@ -144,9 +145,7 @@ const App = () => {
   return (
     <>
       <Container fixed>
-        <h1>
-          English App <Book width="44" heigth="44" />
-        </h1>
+        <Header />
         <h2>The topics of the first test</h2>
         <p>
           These are the different topics covered in units 5 and 6 for the exam.
